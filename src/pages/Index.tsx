@@ -47,7 +47,7 @@ const Index = () => {
               <div className="absolute -inset-3 bg-gradient-to-r from-neon-purple via-neon-pink to-neon-orange blur-3xl -z-10 opacity-60 animate-pulse" />
             </div>
             <div className="relative inline-block">
-              <h1 className="text-7xl md:text-9xl font-black tracking-tight mb-4 bg-gradient-to-r from-neon-purple via-neon-pink to-neon-orange bg-clip-text text-transparent animate-glow">
+              <h1 className="text-7xl md:text-9xl font-black tracking-tight mb-4 bg-gradient-to-r from-neon-purple via-neon-pink to-neon-orange bg-clip-text text-transparent animate-glow px-8 py-4 rounded-3xl border-4 border-neon-purple/30">
                 Скалионов
               </h1>
               <div className="absolute -inset-4 bg-gradient-to-r from-neon-purple/20 to-neon-pink/20 blur-3xl -z-10 animate-float" />
@@ -203,7 +203,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-5xl font-black bg-gradient-to-r from-neon-purple to-neon-pink bg-clip-text text-transparent mb-2">
-                      30+
+                      10+
                     </p>
                     <p className="text-lg text-muted-foreground">Наказано нарушителей</p>
                   </div>
