@@ -58,13 +58,13 @@ const Index = () => {
                 16 y.o
               </span>
               <span className="px-4 py-2 rounded-full bg-neon-pink/10 border border-neon-pink/30 hover:bg-neon-pink/20 transition-all duration-300">
-                дизайнер
+                designer
               </span>
               <span className="px-4 py-2 rounded-full bg-neon-orange/10 border border-neon-orange/30 hover:bg-neon-orange/20 transition-all duration-300">
-                тех поддержка
+                supporter
               </span>
               <span className="px-4 py-2 rounded-full bg-neon-blue/10 border border-neon-blue/30 hover:bg-neon-blue/20 transition-all duration-300">
-                осинтер
+                osinter
               </span>
             </div>
 
@@ -149,15 +149,15 @@ const Index = () => {
                     <div className="space-y-2 text-muted-foreground">
                       <p className="flex items-center gap-2">
                         <Icon name="Palette" size={20} className="text-neon-purple" />
-                        <span>Дизайнер</span>
+                        <span>Designer</span>
                       </p>
                       <p className="flex items-center gap-2">
                         <Icon name="Headphones" size={20} className="text-neon-blue" />
-                        <span>Тех поддержка</span>
+                        <span>Supporter</span>
                       </p>
                       <p className="flex items-center gap-2">
                         <Icon name="Search" size={20} className="text-neon-orange" />
-                        <span>Осинтер</span>
+                        <span>Osinter</span>
                       </p>
                     </div>
                   </div>
@@ -303,7 +303,7 @@ const Index = () => {
                         👥 Команда
                       </span>
                       <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
-                        Кибербезопасность
+                        OSINT
                       </span>
                       <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
                         Админ
