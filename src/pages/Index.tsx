@@ -10,6 +10,14 @@ const Index = () => {
       <div className="relative">
         <section id="hero" className="min-h-screen flex flex-col items-center justify-center px-4 py-20">
           <div className="text-center space-y-8 animate-fade-in-up max-w-4xl">
+            <div className="relative inline-block mb-8">
+              <img 
+                src="https://cdn.poehali.dev/files/@skalionovgood.png" 
+                alt="Скалионов" 
+                className="w-40 h-40 md:w-56 md:h-56 rounded-full mx-auto object-cover border-4 border-neon-purple shadow-[0_0_40px_rgba(155,135,245,0.6)] hover:shadow-[0_0_60px_rgba(155,135,245,0.9)] transition-all duration-500 hover:scale-110 animate-float"
+              />
+              <div className="absolute -inset-3 bg-gradient-to-r from-neon-purple via-neon-pink to-neon-orange blur-3xl -z-10 opacity-60 animate-pulse" />
+            </div>
             <div className="relative inline-block">
               <h1 className="text-7xl md:text-9xl font-black tracking-tight mb-4 bg-gradient-to-r from-neon-purple via-neon-pink to-neon-orange bg-clip-text text-transparent animate-glow">
                 Скалионов
@@ -143,6 +151,61 @@ const Index = () => {
                       <span className="text-neon-pink font-semibold"> himera бек в км</span>. 
                       Спасибо за внимание! 💜
                     </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        <section id="stats" className="min-h-screen flex items-center justify-center px-4 py-20">
+          <div className="max-w-5xl w-full animate-fade-in">
+            <div className="mb-12 text-center">
+              <h2 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent">
+                Достижения
+              </h2>
+              <div className="h-1 w-32 mx-auto bg-gradient-to-r from-neon-blue to-neon-purple rounded-full" />
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="p-8 bg-card/50 backdrop-blur-xl border-neon-purple/30 hover:border-neon-purple transition-all duration-500 hover:scale-110 group text-center">
+                <div className="space-y-4">
+                  <div className="p-4 rounded-xl bg-neon-purple/20 group-hover:bg-neon-purple/30 transition-colors inline-block">
+                    <Icon name="Target" size={48} className="text-neon-purple" />
+                  </div>
+                  <div>
+                    <p className="text-5xl font-black bg-gradient-to-r from-neon-purple to-neon-pink bg-clip-text text-transparent mb-2">
+                      30+
+                    </p>
+                    <p className="text-lg text-muted-foreground">Наказано нарушителей</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 bg-card/50 backdrop-blur-xl border-neon-pink/30 hover:border-neon-pink transition-all duration-500 hover:scale-110 group text-center">
+                <div className="space-y-4">
+                  <div className="p-4 rounded-xl bg-neon-pink/20 group-hover:bg-neon-pink/30 transition-colors inline-block">
+                    <Icon name="Zap" size={48} className="text-neon-pink" />
+                  </div>
+                  <div>
+                    <p className="text-5xl font-black bg-gradient-to-r from-neon-pink to-neon-orange bg-clip-text text-transparent mb-2">
+                      2
+                    </p>
+                    <p className="text-lg text-muted-foreground">Активных проекта</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 bg-card/50 backdrop-blur-xl border-neon-orange/30 hover:border-neon-orange transition-all duration-500 hover:scale-110 group text-center">
+                <div className="space-y-4">
+                  <div className="p-4 rounded-xl bg-neon-orange/20 group-hover:bg-neon-orange/30 transition-colors inline-block">
+                    <Icon name="Calendar" size={48} className="text-neon-orange" />
+                  </div>
+                  <div>
+                    <p className="text-5xl font-black bg-gradient-to-r from-neon-orange to-neon-blue bg-clip-text text-transparent mb-2">
+                      1
+                    </p>
+                    <p className="text-lg text-muted-foreground">Месяц в км</p>
                   </div>
                 </div>
               </Card>
