@@ -176,7 +176,7 @@ const Index = () => {
                       В км я недавно, а именно месяц. За этот месяц я успел наказать много педофилов и скамеров. 
                       Делал я это не один, а с Скалионовым младшим (мой кент). Так-же я овнер проектов таких как:
                     </p>
-                    <div className="flex gap-4 mt-6 justify-center flex-wrap">
+                    <div className="flex gap-6 mt-6 justify-center flex-wrap">
                       <div className="group relative">
                         <div className="relative overflow-hidden rounded-2xl border-4 border-neon-purple/30 hover:border-neon-purple transition-all duration-500 hover:scale-105">
                           <img 
@@ -190,8 +190,18 @@ const Index = () => {
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-r from-neon-purple to-neon-pink blur-2xl -z-10 opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
                       </div>
-                      <div className="flex items-center">
-                        <span className="text-neon-pink font-semibold text-xl">himera бек в км</span>
+                      <div className="group relative">
+                        <div className="relative overflow-hidden rounded-2xl border-4 border-neon-pink/30 hover:border-neon-pink transition-all duration-500 hover:scale-105">
+                          <img 
+                            src="https://cdn.poehali.dev/files/himera.png" 
+                            alt="Himera" 
+                            className="w-64 h-64 object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent flex items-end p-4">
+                            <span className="text-xl font-bold text-neon-pink">himera бек в км</span>
+                          </div>
+                        </div>
+                        <div className="absolute -inset-2 bg-gradient-to-r from-neon-pink to-neon-orange blur-2xl -z-10 opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
                       </div>
                     </div>
                     <p className="text-lg text-muted-foreground mt-6 text-center">
