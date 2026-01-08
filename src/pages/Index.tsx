@@ -1,10 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted overflow-x-hidden cursor-none">
+      <div 
+        className="fixed w-6 h-6 rounded-full border-2 border-neon-purple pointer-events-none z-50 transition-transform duration-100 ease-out"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`,
+          transform: 'translate(-50%, -50%)'
+        }}
+      />
+      <div 
+        className="fixed w-2 h-2 rounded-full bg-neon-pink pointer-events-none z-50"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`,
+          transform: 'translate(-50%, -50%)'
+        }}
+      />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-neon-purple/20 via-transparent to-neon-pink/20 pointer-events-none" />
       
       <div className="relative">
@@ -278,7 +306,7 @@ const Index = () => {
                         Кибербезопасность
                       </span>
                       <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
-                        Овнер
+                        Админ
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-neon-pink pt-2">
