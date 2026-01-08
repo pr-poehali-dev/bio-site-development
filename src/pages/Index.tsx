@@ -57,6 +57,14 @@ const Index = () => {
         <section id="about" className="min-h-screen flex items-center justify-center px-4 py-20">
           <div className="max-w-5xl w-full animate-fade-in">
             <div className="mb-12 text-center">
+              <div className="relative inline-block mb-8">
+                <img 
+                  src="https://cdn.poehali.dev/files/@skalionovgood.png" 
+                  alt="Скалионов" 
+                  className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-neon-purple shadow-[0_0_30px_rgba(155,135,245,0.5)] hover:shadow-[0_0_50px_rgba(155,135,245,0.8)] transition-all duration-500 hover:scale-105"
+                />
+                <div className="absolute -inset-2 bg-gradient-to-r from-neon-purple to-neon-pink blur-2xl -z-10 opacity-50 animate-pulse" />
+              </div>
               <h2 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-neon-pink via-neon-orange to-neon-blue bg-clip-text text-transparent">
                 Обо мне
               </h2>
@@ -153,57 +161,69 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="group relative overflow-hidden bg-card/50 backdrop-blur-xl border-neon-purple/30 hover:border-neon-purple transition-all duration-500 hover:scale-105">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative p-8 space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="p-4 rounded-xl bg-neon-purple/20 group-hover:bg-neon-purple/30 transition-colors">
-                      <Icon name="Cloud" size={40} className="text-neon-purple" />
+                <a href="https://t.me/+5I6SB5EMtjwwMzlh" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative p-8 space-y-4">
+                    <div className="flex items-center gap-4">
+                      <div className="p-4 rounded-xl bg-neon-purple/20 group-hover:bg-neon-purple/30 transition-colors">
+                        <Icon name="Cloud" size={40} className="text-neon-purple" />
+                      </div>
+                      <h3 className="text-3xl font-bold">Туман Разума</h3>
                     </div>
-                    <h3 className="text-3xl font-bold">Туман Разума</h3>
+                    <p className="text-lg text-muted-foreground">
+                      Проект направленный на защиту и борьбу с негативными явлениями в сети. 
+                      Активная работа по выявлению и пресечению противоправной деятельности.
+                    </p>
+                    <div className="flex flex-wrap gap-2 pt-4">
+                      <span className="px-3 py-1 text-sm rounded-full bg-neon-purple/20 border border-neon-purple/40">
+                        Безопасность
+                      </span>
+                      <span className="px-3 py-1 text-sm rounded-full bg-neon-purple/20 border border-neon-purple/40">
+                        OSINT
+                      </span>
+                      <span className="px-3 py-1 text-sm rounded-full bg-neon-purple/20 border border-neon-purple/40">
+                        Овнер
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-neon-purple pt-2">
+                      <Icon name="ExternalLink" size={20} />
+                      <span className="text-sm">Перейти в Telegram</span>
+                    </div>
                   </div>
-                  <p className="text-lg text-muted-foreground">
-                    Проект направленный на защиту и борьбу с негативными явлениями в сети. 
-                    Активная работа по выявлению и пресечению противоправной деятельности.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-4">
-                    <span className="px-3 py-1 text-sm rounded-full bg-neon-purple/20 border border-neon-purple/40">
-                      Безопасность
-                    </span>
-                    <span className="px-3 py-1 text-sm rounded-full bg-neon-purple/20 border border-neon-purple/40">
-                      OSINT
-                    </span>
-                    <span className="px-3 py-1 text-sm rounded-full bg-neon-purple/20 border border-neon-purple/40">
-                      Овнер
-                    </span>
-                  </div>
-                </div>
+                </a>
               </Card>
 
               <Card className="group relative overflow-hidden bg-card/50 backdrop-blur-xl border-neon-pink/30 hover:border-neon-pink transition-all duration-500 hover:scale-105">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-pink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative p-8 space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="p-4 rounded-xl bg-neon-pink/20 group-hover:bg-neon-pink/30 transition-colors">
-                      <Icon name="Shield" size={40} className="text-neon-pink" />
+                <a href="https://t.me/+5a1758TYKfdiOTli" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="absolute inset-0 bg-gradient-to-br from-neon-pink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative p-8 space-y-4">
+                    <div className="flex items-center gap-4">
+                      <div className="p-4 rounded-xl bg-neon-pink/20 group-hover:bg-neon-pink/30 transition-colors">
+                        <Icon name="Shield" size={40} className="text-neon-pink" />
+                      </div>
+                      <h3 className="text-3xl font-bold">himera бек в км</h3>
                     </div>
-                    <h3 className="text-3xl font-bold">himera бек в км</h3>
+                    <p className="text-lg text-muted-foreground">
+                      Проект в сфере кибербезопасности. Разработка и поддержка систем защиты, 
+                      активное участие в сообществе специалистов.
+                    </p>
+                    <div className="flex flex-wrap gap-2 pt-4">
+                      <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
+                        Кибербезопасность
+                      </span>
+                      <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
+                        Backend
+                      </span>
+                      <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
+                        Овнер
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-neon-pink pt-2">
+                      <Icon name="ExternalLink" size={20} />
+                      <span className="text-sm">Перейти в Telegram</span>
+                    </div>
                   </div>
-                  <p className="text-lg text-muted-foreground">
-                    Проект в сфере кибербезопасности. Разработка и поддержка систем защиты, 
-                    активное участие в сообществе специалистов.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-4">
-                    <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
-                      Кибербезопасность
-                    </span>
-                    <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
-                      Backend
-                    </span>
-                    <span className="px-3 py-1 text-sm rounded-full bg-neon-pink/20 border border-neon-pink/40">
-                      Овнер
-                    </span>
-                  </div>
-                </div>
+                </a>
               </Card>
             </div>
 
